@@ -1,0 +1,16 @@
+{
+	"Args": [
+		"run",
+		"--env",
+		"lite",
+		"-v",
+		"-p",
+		"-n=3",
+		"--tags",
+		"lite"
+	],
+	"FailedItems": [
+		"specs/OPD.spec:48",
+		"specs/OPD.spec:126"
+	]
+}

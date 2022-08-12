@@ -1,0 +1,9 @@
+[
+	"gauge",
+	"run",
+	"specs",
+	"--env",
+	"dev.lite",
+	"--tags",
+	"clinic"
+]
