@@ -94,16 +94,17 @@
   <script src="js/main.js" type="text/javascript"></script>
   <script type="text/javascript">
     function updateURL() {
-      var mypath = location.href//"https://gokultw.github.io/bahmni-e2e-tests/report-2858753591-1/";
-      // location.pathname
+      var mypath = "https://gokultw.github.io/bahmni-e2e-tests/404.html"//location.href//"https://gokultw.github.io/bahmni-e2e-tests/report-2858753591-1/";
       var pathName = mypath.split("/").filter(element => element);
       if (pathName.length == 4 && /report-[0-9]+-[0-9]/.test(pathName[3])) {
         document.getElementById("oldReport").href = `https://github.com/${pathName[1].split(".")[0]}/${pathName[2]}/actions/runs/${pathName[3].split("-")[1]}`;
         document.getElementById("headerMessageValid").style.display="inline"
       }
-      else{
-        location.href = "404.html"
+      else {
         document.getElementById("headerMessageInValid").style.display="inline"
+        if(pathName[pathName.length-1] != "404.html"){
+          location.href = "404.html"
+        }
       }
     }
   </script>
