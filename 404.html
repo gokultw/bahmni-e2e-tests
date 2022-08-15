@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <html>
 
-<script>
-  var domain_name = "https://gokultw.github.io/bahmni-e2e-tests/"
-</script>
-
 <head>
   <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
   <meta http-equiv="refresh" content="3">
@@ -38,9 +34,9 @@
   <header class="top">
     <div class="header">
       <div class="container">
-        <div class="logo"> 
+        <div class="logo">
           <a href="404.html">
-            <img :src="`${domain_name}images/gaugeLogo.png`" alt="Report logo">
+            <img id="logo" src="images/gaugeLogo.png" alt="Report logo">
           </a>
         </div>
         <h2 class="project">Project: bahmni-e2e-tests</h2>
@@ -68,7 +64,7 @@
             </div>
             <div id="headerMessageInValid" class="spec-head-wrapper" style="display:none">
               <center>
-                <img src="https://gokultw.github.io/bahmni-e2e-tests/images/404.png" id="404Image">
+                <img src="images/404.png" id="404Image">
               </center>
             </div>
             <div class="spec-meta">
@@ -100,15 +96,22 @@
     function updateURL() {
       var mypath = location.href
       var pathName = mypath.split("/").filter(element => element);
+      var domain_name = ""
+      if (pathName.length > 3) {
+        domain_name = `https://${pathName[1]}/${pathName[2]}/`
+      }
+      const gfname = (selector) => {
+
+        document.querySelectorAll(`*[${selector}]`).forEach(x => x.setAttribute(selector, domain_name + x.getAttribute(selector)))
+      }
+      gfname('src');
+      gfname('href');
       if (pathName.length == 4 && /report-[0-9]+-[0-9]/.test(pathName[3])) {
         document.getElementById("oldReport").href = `https://github.com/${pathName[1].split(".")[0]}/${pathName[2]}/actions/runs/${pathName[3].split("-")[1]}`;
         document.getElementById("headerMessageValid").style.display = "inline"
       }
       else {
         document.getElementById("headerMessageInValid").style.display = "inline"
-        if (pathName[pathName.length - 1] != "404.html") {
-          location.href = "404.html"
-        }
       }
     }
   </script>
