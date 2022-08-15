@@ -64,7 +64,7 @@
             </div>
             <div id = "headerMessageInValid" class="spec-head-wrapper" style="display:none">
               <center>
-                <img src="images/404.png" id="404Image">
+                <img src="https://gokultw.github.io/bahmni-e2e-tests/images/404.png" id="404Image">
               </center>
             </div>
             <div class="spec-meta">
@@ -102,6 +102,7 @@
         document.getElementById("headerMessageValid").style.display="inline"
       }
       else{
+        location.href = "404.html"
         document.getElementById("headerMessageInValid").style.display="inline"
       }
     }
