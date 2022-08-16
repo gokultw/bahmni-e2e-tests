@@ -48,11 +48,14 @@
           <header class="curr-spec">
             <div id="headerMessageValid" class="spec-head-wrapper" style="display:none">
               <center>
-                <h3><span style="color:rgb(255  , 238, 0)">OOPS! Your report is expired!</span>, if you're looking for
-                  latest report please wait for few seconds, page will load automatically.<br><br>
+                <h3>
+                  <span style="color:rgb(255  , 238, 0)">OOPS! Your report is expired!</span>, if you're looking for
+                  latest report please wait for few seconds, page will load automatically. <br>
+                  <br>
                 </h3>
                 <h3>Only the last 10 reports can be viewed here, you can still view the expired report by <a
-                    id="oldReport" href="" style="color:Orange">downloading it from here</a></h3>
+                    id="oldReport" href="" style="color:Orange">downloading it from here</a>
+                </h3>
               </center>
             </div>
             <div id="headerMessageInValid" class="spec-head-wrapper" style="display:none">
@@ -65,9 +68,28 @@
               <span class="time"></span>
             </div>
           </header>
-          <div id="specItemsContainer"></div>
+          <div id="specItemsContainer" <div class="content">
+            <span></span>
+            <div class="scenario-container passed">
+              <div class="scenario-head">
+                <h3 class="head borderBottom">Below are the list of latest reports available.</h3>
+              </div>
+              <div class="step concept">
+                <div class="step-info passed">
+                  <ul>
+                    <li class="step">
+                      <div class="step-txt">
+                        <span>REPORT NAME</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+    </div>
     </div>
   </main>
   <footer class="footer">
@@ -105,11 +127,33 @@
         setTimeout(function () {
           location.reload();
         }, 3000);
-      }
-      else {
+      } else {
         document.getElementById("headerMessageInValid").style.display = "inline"
+        listActiveReports(resourceUrlPrefix);
       }
     }
+    const { resolve } = require('path'),
+      { readdir } = require('fs').promises;
+
+    async function getFiles(dir) {
+      const dirents = await readdir(dir, { withFileTypes: true });
+      const files = await Promise.all(dirents.map((dirent) => {
+        const res = resolve(dir, dirent.name);
+        return dirent.isDirectory() ? getFiles(res) : res;
+      }));
+      return Array.prototype.concat(...files);
+    }
+
+    const directory = "file:///Users/gokul.kuppan/Documents/GitHub/bahmni-e2e-tests/";
+
+    getFiles(directory).then(results => {
+      const html = `<ul>` +
+        results.map(fileOrDirectory => `<li>${fileOrDirectory}</li>`).join('\n') +
+        `</ul>`;
+
+      process.stdout.write(html);
+      // or you could use something like fs.writeFile to write the file directly
+    });
   </script>
   <div class="autocomplete-suggestions "></div>
 </body>
