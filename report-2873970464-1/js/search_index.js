@@ -1,0 +1,1 @@
+var index = {"Tags":{"clinic":["specs/zlabLite.html","specs/paymentLite.html"],"lab-lite":["specs/zlabLite.html"],"payment-lite":["specs/paymentLite.html"]},"Specs":{"Lab Lite":["specs/zlabLite.html"],"Payment Lite":["specs/paymentLite.html"]}};
