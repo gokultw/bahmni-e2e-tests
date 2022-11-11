@@ -1,5 +1,6 @@
 name: E2E Tests
 on:
+  push:
   schedule:
     - cron: "30 0 * * *" # Schedule fpr Demo Env Runs at 6.00AM IST - 12.30AM UTC
     - cron: "0 5 * * *" # Schedule fpr QA.lite Env Runs at 10.30AM IST - 5.00AM UTC
