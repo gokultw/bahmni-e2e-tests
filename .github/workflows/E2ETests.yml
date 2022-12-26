@@ -96,7 +96,7 @@ jobs:
         run: xvfb-run npm run ci -- --env $TARGET_ENV --tags 'setup'
       - name: Run Tests
         id: run_test
-        run: xvfb-run npm run ci -- --env $TARGET_ENV --tags "${{env.TEST_CONTEXT}}"
+        run: xvfb-run npm run ci -- --env $TARGET_ENV --tags "${{env.TEST_CONTEXT}}" --p
       - name: Upload HTML reports
         if: ${{(success() || failure()) && env.ENV_FLAG}}
         uses: actions/upload-artifact@v2
