@@ -17,6 +17,7 @@ on:
         type: choice
         default: dev.lite
         options:
+          - docker.lite
           - dev.lite
           - qa.lite
           - lite
