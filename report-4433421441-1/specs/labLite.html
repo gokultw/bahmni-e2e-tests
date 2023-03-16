@@ -31,13 +31,13 @@
    
   <div class="report_chart">
     <div class="chart">
-      <svg id="pie-chart" data-results="1,1,0" data-total="2">
+      <svg id="pie-chart" data-results="5,1,0" data-total="6">
         <path class="status failed" />
-        <path class="shadow failed" data-status="failed"><title>Failed: 1/2</title></path>
+        <path class="shadow failed" data-status="failed"><title>Failed: 5/6</title></path>
         <path class="status passed" />
-        <path class="shadow passed" data-status="passed"><title>Passed: 1/2</title></path>
+        <path class="shadow passed" data-status="passed"><title>Passed: 1/6</title></path>
         <path class="status skipped" />
-        <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/2</title></path>
+        <path class="shadow skipped" data-status="skipped"><title>Skipped: 0/6</title></path>
       </svg>
     </div>
   </div>
@@ -45,15 +45,15 @@
    
   <div class="report_test-results">
     <div class="report_test-result specs">
-        <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">2</span></div>
-        <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">1</span></div>
+        <div class="total-specs" title="Filter all specs"><span class="txt">Total specs</span><span class="value">6</span></div>
+        <div class="fail spec-filter" data-status="failed" title="Filter failed specs"><span class="value">5</span></div>
         <div class="pass spec-filter" data-status="passed" title="Filter passed specs"><span class="value">1</span></div>
         <div class="skip spec-filter" data-status="skipped" title="Filter skipped specs"><span class="value">0</span></div>
     </div>
     <div class="report_test-result scenarios">
-        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">2</span></div>
-        <div class="fail scenario-stats" data-status="failed"><span class="value">1</span></div>
-        <div class="pass scenario-stats" data-status="passed"><span class="value">1</span></div>
+        <div class="total-scenarios"><span class="txt">Total scenario</span><span class="value">8</span></div>
+        <div class="fail scenario-stats" data-status="failed"><span class="value">5</span></div>
+        <div class="pass scenario-stats" data-status="passed"><span class="value">3</span></div>
         <div class="skip scenario-stats" data-status="skipped"><span class="value">0</span></div>
     </div>
   </div>
@@ -68,20 +68,20 @@
     
     <li>
       <label>Tags </label>
-      <span>clinic & smoke</span>
+      <span>clinic & regression</span>
     </li>
     
     <li>
       <label>Success Rate </label>
-      <span>50%</span>
+      <span>16%</span>
     </li>
     <li>
       <label>Total Time </label>
-      <span>00:07:31</span>
+      <span>00:35:52</span>
     </li>
     <li>
       <label>Generated On </label>
-      <span>Dec 20, 2022 at 7:53pm</span>
+      <span>Mar 16, 2023 at 9:33am</span>
     </li>
   </ul>
 
@@ -123,16 +123,52 @@
               <li class="failed spec-name">
             
               <span id="scenarioName" class="scenarioname">Payment Lite</span>
-              <span id="time" class="time">00:02:34</span>
+              <span id="time" class="time">00:03:40</span>
+            </li>
+          </a>
+          
+          <a href="Consultation.html">
+            
+              <li class="failed spec-name">
+            
+              <span id="scenarioName" class="scenarioname">Consultation</span>
+              <span id="time" class="time">00:10:38</span>
+            </li>
+          </a>
+          
+          <a href="PatientDocument.html">
+            
+              <li class="failed spec-name">
+            
+              <span id="scenarioName" class="scenarioname">Patient documents</span>
+              <span id="time" class="time">00:03:37</span>
+            </li>
+          </a>
+          
+          <a href="Reports.html">
+            
+              <li class="failed spec-name">
+            
+              <span id="scenarioName" class="scenarioname">Reports Validation</span>
+              <span id="time" class="time">00:03:36</span>
             </li>
           </a>
           
           <a href="labLite.html">
+            
+              <li class="failed spec-name">
+            
+              <span id="scenarioName" class="scenarioname">Lab Lite</span>
+              <span id="time" class="time">00:03:36</span>
+            </li>
+          </a>
+          
+          <a href="Appointments.html">
              
               <li class="passed spec-name">
             
-              <span id="scenarioName" class="scenarioname">Lab Lite</span>
-              <span id="time" class="time">00:04:56</span>
+              <span id="scenarioName" class="scenarioname">Appointments</span>
+              <span id="time" class="time">00:10:33</span>
             </li>
           </a>
           
@@ -150,8 +186,8 @@
         <h3 class="spec-head" title="/home/runner/work/bahmni-e2e-tests/bahmni-e2e-tests/specs/labLite.spec">Lab Lite</h3>
         <div class="hidden report_test-results" alt="Scenarios" title="Scenarios">
           <ul>
-            <li class="fail"><span class="value">0</span><span class="txt">Failed</span></li>
-            <li class="pass"><span class="value">1</span><span class="txt">Passed</span></li>
+            <li class="fail"><span class="value">1</span><span class="txt">Failed</span></li>
+            <li class="pass"><span class="value">0</span><span class="txt">Passed</span></li>
             <li class="skip"><span class="value">0</span><span class="txt">Skipped</span></li>
           </ul>
         </div>
@@ -164,7 +200,7 @@
               <i class="fa fa-clipboard" aria-hidden="true" title="Copy to Clipboard"></i>
           </button>
         </div>
-        <span class="time">00:04:56</span>
+        <span class="time">00:03:36</span>
       </div>
 
 	
@@ -190,14 +226,14 @@
       
         
 	
-  <div class="scenario-container passed">
+  <div class="scenario-container failed">
     
 
 	
   <div class="scenario-head">
     <h3 class="head borderBottom">Doctor should be able to prescribe medicines and tests and get relevant reports from LabLite</h3>
     
-    <span class="time">00:04:56</span>
+    <span class="time">00:03:36</span>
 
 	
   
@@ -247,10 +283,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:27</span>
+      <span class="time">Execution Time : 00:03:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info failed">
   
   <ul>
     <li class="step">
@@ -293,10 +329,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:09</span>
+      <span class="time">Execution Time : 00:03:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info failed">
   
   <ul>
     <li class="step">
@@ -323,6 +359,28 @@
   </div>
 
   
+    
+        
+  <div class="error-container failed">
+    <div class="exception-container">
+      <div class="exception">
+        <h4 class="error-message">
+          <pre>Error: Timed out</pre>
+        </h4>
+        <pre class="stacktrace">Error: Timed out<br/>    at Timeout.&lt;anonymous&gt; (/home/runner/.gauge/plugins/js/2.4.0/src/test.js:44:23)<br/>    at listOnTimeout (node:internal/timers:559:17)<br/>    at processTimers (node:internal/timers:502:7)</pre>
+      </div>
+      
+         <div class="screenshot-container">
+          <div class="screenshot">
+            <a href="../images/screenshot-2068157961756.png" rel="lightbox">
+              <img src="../images/screenshot-2068157961756.png" class="screenshot-thumbnail" />
+            </a>
+          </div>
+        </div>
+      
+    </div>
+  </div>
+
     
     
   
@@ -359,7 +417,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -432,7 +490,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -492,10 +550,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:10</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -524,14 +582,6 @@
   
     
     
-  
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>CustomSelector with query .btn-user-info  not found</p>
- </div>
-      </div>
-    </div>
   
 
     
@@ -563,10 +613,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:07</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -645,10 +695,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:01:13</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -677,10 +727,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:49</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -709,10 +759,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:08</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -782,10 +832,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:40</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -814,10 +864,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -877,10 +927,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -910,14 +960,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>firstName Javas</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -948,10 +990,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -981,14 +1023,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>middleName Gray</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1019,10 +1053,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1052,14 +1086,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>lastName Kapoor</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1090,10 +1116,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1123,14 +1149,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>patientGender Male</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1161,10 +1179,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1194,14 +1212,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>age 68</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1232,10 +1242,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1265,14 +1275,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>houseNumber 8059</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1303,10 +1305,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1336,14 +1338,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>localitySector Aalok Expressway</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1374,10 +1368,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1407,14 +1401,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>village Koratla</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1445,10 +1431,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1478,14 +1464,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>pinCode 361345</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1516,10 +1494,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1549,14 +1527,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>mobile +919794869923</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1587,10 +1557,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1620,14 +1590,6 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>emailAddress Chandraprabha_Iyengar@yahoo.co.in</p>
- </div>
-      </div>
-    </div>
-  
 
     
     
@@ -1658,10 +1620,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1721,10 +1683,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:14</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1754,13 +1716,68 @@
     
     
   
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>patient Identifier ABC200149</p>
- </div>
-      </div>
-    </div>
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info not-executed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Verify no error displayed on page
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
   
 
     
@@ -1802,10 +1819,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:23</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1834,10 +1851,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1897,10 +1914,73 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Verify no error displayed on page
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -1964,10 +2044,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2027,10 +2107,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:11</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2090,10 +2170,73 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Verify no error displayed on page
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2163,10 +2306,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:10</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2209,10 +2352,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2272,10 +2415,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:07</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2354,10 +2497,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:17</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2386,10 +2529,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:09</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2459,10 +2602,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2522,10 +2665,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:03</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2588,7 +2731,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2653,10 +2796,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:08</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2689,10 +2832,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2762,10 +2905,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2829,10 +2972,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2864,7 +3007,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2924,10 +3067,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -2987,10 +3130,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3047,6 +3190,69 @@
   
 
   
+    
+  
+    
+  
+  <div class="step">
+  
+  
+    <h5 class="execution-time">
+      <span class="time">Execution Time : 00:00:00</span>
+    </h5>
+  
+  <div class="step-info not-executed">
+  
+  <ul>
+    <li class="step">
+      <div class="step-txt">
+
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+    
+      <span>
+        Verify no error displayed on page
+      </span>
+    
+  
+  </div>
+
+  
+    
+    
+  
+
+    
+    
+  
+
+  
+  
+  
+  
+
+  
+  
+
+  
+	</li></ul></div></div>
+  
+    
+  
+
+  
+
+  
   </div>
 
   
@@ -3060,10 +3266,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:08</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3123,10 +3329,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:19</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3196,10 +3402,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:14</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3228,10 +3434,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3291,10 +3497,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3354,10 +3560,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:10</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3417,10 +3623,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3488,7 +3694,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3520,7 +3726,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3585,10 +3791,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:17</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3617,10 +3823,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:14</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3649,10 +3855,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3712,10 +3918,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3775,10 +3981,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3838,10 +4044,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3901,10 +4107,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:08</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -3969,10 +4175,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4037,10 +4243,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4100,10 +4306,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:03</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4163,10 +4369,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:17</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4195,10 +4401,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:06</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4268,10 +4474,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:11</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4336,10 +4542,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4371,7 +4577,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4448,7 +4654,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4525,7 +4731,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4602,7 +4808,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4681,10 +4887,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:07</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4744,10 +4950,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:15</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4776,10 +4982,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:09</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4849,10 +5055,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:01</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4912,10 +5118,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -4983,7 +5189,7 @@
       <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5050,10 +5256,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:18</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5096,10 +5302,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:10</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5159,10 +5365,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:07</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5241,10 +5447,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:31</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5273,10 +5479,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:08</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5346,10 +5552,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:14</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5378,14 +5584,6 @@
   
     
     
-  
-    <div class="message-container">
-      <i class="fa fa-minus-square" aria-hidden="true"></i>
-      <div class="messages">
-        <div class="step-message"><p>patient Identifier ABC200149</p>
- </div>
-      </div>
-    </div>
   
 
     
@@ -5417,10 +5615,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:04</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5480,10 +5678,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
@@ -5543,10 +5741,10 @@
   
   
     <h5 class="execution-time">
-      <span class="time">Execution Time : 00:00:02</span>
+      <span class="time">Execution Time : 00:00:00</span>
     </h5>
   
-  <div class="step-info passed">
+  <div class="step-info not-executed">
   
   <ul>
     <li class="step">
