@@ -19,6 +19,7 @@ do
                 echo $url is not reachable with status code $statusCode, retrying after $retry_time seconds, remaining time left $max_timeout seconds
                 sleep $retry_time
                 max_timeout=`expr $max_timeout - $retry_time`
+                break
         else
                 flag=true
                 echo "ENV_FLAG=true" >> $GITHUB_ENV
