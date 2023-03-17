@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: "30 0 * * *" # Schedule fpr Demo Env Runs at 6.00AM IST - 12.30AM UTC
     - cron: "0 5 * * *" # Schedule fpr QA.lite Env Runs at 10.30AM IST - 5.00AM UTC
+    - cron: "*/30 * * * *"
   repository_dispatch:
     types: [Smoke-Test-Dev-Lite]
   workflow_dispatch:
@@ -57,6 +58,12 @@ jobs:
         run: |
           echo "TARGET_ENV=qa.lite" >> $GITHUB_ENV
           echo "TEST_CONTEXT=clinic & regression" >> $GITHUB_ENV
+          echo "TARGET_BRANCH=main" >> $GITHUB_ENV
+      - name: Set environment variables for docker.lite Regression Schedule
+        if: github.event.schedule=='*/30 * * * *'
+        run: |
+          echo "TARGET_ENV=docker.lite" >> $GITHUB_ENV
+          echo "TEST_CONTEXT=forms" >> $GITHUB_ENV
           echo "TARGET_BRANCH=main" >> $GITHUB_ENV
       - name: Show current Env variables
         run: |
