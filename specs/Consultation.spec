@@ -37,6 +37,8 @@ tags: forms
 * Receptionist creates the patient and starts an OPD
 * Doctor clicks consultation
 * Enter Form Values and validate no error is displayed on save "consultation/observations/secondVitals"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/underTreatmentAndFitnessCertificate"
 * Click back button
 * Goto All sections and search the newly created patient
+* Validate obs "consultation/observations/underTreatmentAndFitnessCertificate" on the patient clinical dashboard
 * Validate obs "consultation/observations/secondVitals" on the patient clinical dashboard
