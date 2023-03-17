@@ -37,8 +37,29 @@ tags: forms
 * Receptionist creates the patient and starts an OPD
 * Doctor clicks consultation
 * Enter Form Values and validate no error is displayed on save "consultation/observations/secondVitals"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/deathNote"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/admissionLetter"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/diabetesProgress"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/diabetesIntake"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/hypertensionIntake"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/hypertensionProgress"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/malaria"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/obstetricsAndGynaecology"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/orthopaedic"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/referralLetter"
+* Enter Form Values and validate no error is displayed on save "consultation/observations/registrationDetail"
 * Enter Form Values and validate no error is displayed on save "consultation/observations/underTreatmentAndFitnessCertificate"
 * Click back button
 * Goto All sections and search the newly created patient
 * Validate obs "consultation/observations/underTreatmentAndFitnessCertificate" on the patient clinical dashboard
 * Validate obs "consultation/observations/secondVitals" on the patient clinical dashboard
+* Validate obs "consultation/observations/referralLetter" on the patient clinical dashboard
+* Validate obs "consultation/observations/orthopaedic" on the patient clinical dashboard
+* Validate obs "consultation/observations/obstetricsAndGynaecology" on the patient clinical dashboard
+* Validate obs "consultation/observations/malaria" on the patient clinical dashboard
+* Validate obs "consultation/observations/hypertensionProgress" on the patient clinical dashboard
+* Validate obs "consultation/observations/hypertensionIntake" on the patient clinical dashboard
+* Validate obs "consultation/observations/diabetesIntake" on the patient clinical dashboard
+* Validate obs "consultation/observations/diabetesProgress" on the patient clinical dashboard
+* Validate obs "consultation/observations/admissionLetter" on the patient clinical dashboard
+* Validate obs "consultation/observations/deathNote" on the patient clinical dashboard
