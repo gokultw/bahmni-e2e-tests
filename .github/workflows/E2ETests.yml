@@ -59,10 +59,10 @@ jobs:
           echo "TARGET_ENV=qa.lite" >> $GITHUB_ENV
           echo "TEST_CONTEXT=clinic & regression" >> $GITHUB_ENV
           echo "TARGET_BRANCH=main" >> $GITHUB_ENV
-      - name: Set environment variables for qa.lite forms
+      - name: Set environment variables for dev.lite forms
         if: github.event.schedule=='*/30 * * * *'
         run: |
-          echo "TARGET_ENV=qa.lite" >> $GITHUB_ENV
+          echo "TARGET_ENV=dev.lite" >> $GITHUB_ENV
           echo "TEST_CONTEXT=forms" >> $GITHUB_ENV
           echo "TARGET_BRANCH=main" >> $GITHUB_ENV
       - name: Show current Env variables
